@@ -1,26 +1,99 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 1) Nouvelle configuration CSS-first (Tailwind v4) */
+@theme {
+  /* Thème clair par défaut */
+  --color-background: #ffffff;
+  /* Fond pure white */
+  --color-card: #f3f4f6;
+  /* Light gray cards */
+  --color-primary: #38b6ff;
+  /* Ton bleu branding */
+  --color-secondary: #68c8ff;
+  /* Ton vert branding existant */
+  --color-text-main: #1f2937;
+  /* Charcoal pour le texte principal */
+  --color-text-secondary: #4b5563;
+  /* Gris moyen pour le sous–texte */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* 2) Dark mode (optionnel) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #111827;
+    --color-card: #1F2937;
+    --color-text-main: #F3F4F6;
+    --color-text-secondary: #9CA3AF;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* 3) Base styles */
+@layer base {
+  body {
+    @apply bg-background text-text-main antialiased;
+  }
+
+  /* Uniformise les cartes sur fond clair */
+  .bg-card {
+    @apply bg-card;
+  }
+}
+
+/* 4) Composants persos */
+@layer components {
+  .section-title {
+    @apply text-3xl font-bold mb-6 text-primary text-center sm:text-4xl;
+  }
+
+  .card-hover {
+    @apply bg-card p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .tag {
+    @apply inline-block bg-primary/20 text-primary text-xs font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full;
+  }
+
+  a.btn-primary {
+    @apply inline-block bg-primary text-white font-semibold py-2 px-5 rounded-lg hover:bg-primary/90 transition-colors duration-200;
+  }
+}
+
+/* 5) Utilities pour animation */
+@layer utilities {
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+  }
+
+  .delay-200 {
+    animation-delay: .2s;
+  }
+
+  .delay-400 {
+    animation-delay: .4s;
+  }
+
+  .delay-600 {
+    animation-delay: .6s;
+  }
+
+  .delay-800 {
+    animation-delay: .8s;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
 }
