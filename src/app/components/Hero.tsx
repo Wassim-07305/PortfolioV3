@@ -31,10 +31,10 @@ export default function Hero({ data = portfolioData }: Readonly<HeroProps>) {
             setTimeout(() => setCopied(false), 2000);
         }
     };
-
-    const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const handleEmailClick = () => {
         // Exécute la copie de l'email
         copyEmailToClipboard();
+        // L'action par défaut (mailto) sera toujours exécutée car e.preventDefault() n'est pas appelé
     };
 
     return (
