@@ -58,7 +58,7 @@ export const portfolioData = {
                 "Authentification Firebase",
                 "Déploiement CI/CD (Vercel)"
             ],
-            link: "#",
+            link: "https://dress-code-peach.vercel.app",
             imageUrl: "/Dresscode.png"
         },
         {
@@ -74,7 +74,7 @@ export const portfolioData = {
                 "UI moderne (TailwindCSS + composants Lucide/Geist)",
                 "Déploiement full-stack sur Vercel"
             ],
-            link: "#",
+            link: "https://eventconnect-pink.vercel.app/",
             imageUrl: "/Eventconnect.png"
         },
         {
@@ -89,7 +89,7 @@ export const portfolioData = {
                 "Refonte UI (Bootstrap + Figma)",
                 "–40 % de temps de saisie grâce à l’optimisation"
             ],
-            link: "#",
+            link: "https://karrosserie.pro/",
             imageUrl: "/Karrosserie.png"
         }
     ],

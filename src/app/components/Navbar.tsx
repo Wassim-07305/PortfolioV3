@@ -7,7 +7,6 @@ import {
     User,
     Wrench,
     Folder,
-    Briefcase,
     GraduationCap,
     TestTube,
     FileText,
@@ -24,7 +23,6 @@ export default function Navbar() {
         { label: 'À propos', href: '#about', icon: <User size={20} className="text-text-secondary" /> },
         { label: 'Compétences', href: '#skills', icon: <Wrench size={20} className="text-text-secondary" /> },
         { label: 'Projets', href: '#projects', icon: <Folder size={20} className="text-text-secondary" /> },
-        { label: 'Services', href: '#services', icon: <Briefcase size={20} className="text-text-secondary" /> },
         { label: 'Formation', href: '#education', icon: <GraduationCap size={20} className="text-text-secondary" /> },
         { label: 'Autres', href: '#other', icon: <TestTube size={20} className="text-text-secondary" /> },
     ];
@@ -71,7 +69,7 @@ export default function Navbar() {
                     </Link>
 
                     <Link
-                        href="https://github.com/ton-profile"  // remplace par ton lien GitHub
+                        href="https://github.com/Wassim-06"  // remplace par ton lien GitHub
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-text-secondary hover:text-primary transition-colors"
@@ -128,7 +126,7 @@ export default function Navbar() {
                     </Link>
 
                     <Link
-                        href="https://github.com/ton-profile"  // remplace par ton lien GitHub
+                        href="https://github.com/Wassim-06"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center py-2 space-x-2 text-text-secondary hover:text-primary transition-colors"
