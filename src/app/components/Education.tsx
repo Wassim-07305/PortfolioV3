@@ -2,7 +2,6 @@
 
 import { portfolioData } from '@/lib/data';
 import { BookOpen, GraduationCap, Award, Calendar, ShieldCheck, School } from 'lucide-react';
-import clsx from 'clsx';
 
 interface EducationProps {
     readonly data: typeof portfolioData.education;

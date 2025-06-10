@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { UserRound, Zap, Code, BrainCircuit, Sparkles } from 'lucide-react';
+import { UserRound, Zap, Code, BrainCircuit } from 'lucide-react';
 import { portfolioData } from '@/lib/data';
 
 const icons: { [key: string]: React.ReactNode } = {
