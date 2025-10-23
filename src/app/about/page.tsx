@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden">
-      {/* Hero Section */}
-      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+      {/* About Section */}
+      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-20">
         {/* Background Effects */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[800px]">
@@ -16,7 +16,7 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center gap-6 max-w-[620px] w-full">
+        <div className="relative z-10 flex flex-col items-center gap-6 max-w-[720px] w-full">
           {/* Profile Picture */}
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/10">
             <Image src="/NewPhoto.png" alt="Wassim Ahmane" width={96} height={96} className="w-full h-full object-cover" />
@@ -42,48 +42,34 @@ export default function HomePage() {
             </a>
             <a href="https://www.tiktok.com/@wassim.aiops" target="_blank" rel="noopener noreferrer"
                className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/8 backdrop-blur-md hover:bg-white/12 transition-all duration-200">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/640px-Tiktok_icon.svg.png" alt="TikTok" width={20} height={20} className="w-5 h-5" />
+              <Image src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" width={20} height={20} className="w-5 h-5" />
               <span className="text-sm font-medium">@wassim.aiops</span>
             </a>
           </div>
 
-          {/* Main Heading */}
-          <div className="flex flex-col items-center gap-4 text-center mt-4">
+          {/* About Section */}
+          <div className="flex flex-col items-center gap-6 text-center mt-8 w-full">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif italic leading-[110%] text-[#f0f0f0]">
-              Je crée des apps qui simplifient la vie
+              À propos de Wassim
             </h1>
-            <Link href="/about" className="flex items-center justify-center px-6 py-2 rounded-full bg-white/8 backdrop-blur-md hover:bg-white/12 transition-all duration-200 text-sm font-medium">
-              about me
-            </Link>
-          </div>
-
-          {/* Project Links */}
-          <div className="flex flex-col gap-4 w-full max-w-[500px] mt-8">
-            <a href="https://www.mydresscode.app/" target="_blank" rel="noopener noreferrer"
-               className="group relative w-full rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-200 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-white/10 backdrop-blur-sm p-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
-                  <Image src="/Logo1.png" alt="DressCode" width={48} height={48} className="w-10 h-10 object-contain" />
-                </div>
-                <div className="flex flex-col items-start text-left">
-                  <span className="text-xl font-bold">DressCode</span>
-                  <span className="text-sm text-white/70 mt-1">L&apos;app qui révolutionne ta garde-robe</span>
-                </div>
-              </div>
-            </a>
             
-            <a href="https://discord.gg/p596k9Uj" target="_blank" rel="noopener noreferrer"
-               className="group relative w-full rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-200 bg-gradient-to-r from-indigo-600/20 to-blue-600/20 border border-white/10 backdrop-blur-sm p-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
-                  <Image src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord" width={48} height={48} className="w-10 h-10 object-contain" />
-                </div>
-                <div className="flex flex-col items-start text-left">
-                  <span className="text-xl font-bold">Rejoins la communauté Discord</span>
-                  <span className="text-sm text-white/70 mt-1">Connecte-toi avec d&apos;autres créateurs</span>
-                </div>
-              </div>
-            </a>
+            {/* About Content */}
+            <div className="w-full max-w-[600px] bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
+              <p className="text-base sm:text-lg text-white/80 leading-relaxed">
+                Passionné par la création d&apos;applications qui facilitent le quotidien, je transforme des idées innovantes en produits concrets. 
+                Mon objectif est de développer des solutions numériques qui ont un impact réel sur la vie des utilisateurs.
+                <br /><br />
+                Avec DressCode, je révolutionne la manière dont les gens gèrent leur garde-robe. 
+                Je partage également mon parcours et mes connaissances à travers mes réseaux sociaux pour inspirer d&apos;autres créateurs.
+                <br /><br />
+                Toujours à la recherche de nouveaux défis, j&apos;aime explorer les dernières technologies et les intégrer dans mes projets pour créer des expériences utilisateur exceptionnelles.
+              </p>
+            </div>
+
+            {/* Home Button */}
+            <Link href="/" className="flex items-center justify-center px-6 py-2 rounded-full bg-white/8 backdrop-blur-md hover:bg-white/12 transition-all duration-200 text-sm font-medium">
+              home
+            </Link>
           </div>
         </div>
       </div>

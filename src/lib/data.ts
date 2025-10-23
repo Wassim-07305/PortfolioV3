@@ -11,7 +11,7 @@ export const portfolioData = {
     location: "Marseille (France) – Travail à distance ou sur site",
     contactEmail: "ahmanewassim6@gmail.com",
     contactSlogan: "Réponse garantie en moins d’une heure – Disponible 7j/7",
-    photoUrl: "/profile.png",
+    photoUrl: "/NewPhoto.png",
     about: {
         introduction: "Passionné par la création de solutions numériques innovantes, je suis un développeur full-stack avec une forte appétence pour les architectures back-end robustes et les expériences utilisateur fluides. Mon objectif est de transformer des idées complexes en applications performantes, intuitives et scalables.",
         story: "Mon parcours a débuté avec une curiosité pour le fonctionnement interne des applications que j'utilisais au quotidien. Cette curiosité s'est rapidement transformée en une véritable passion pour le code et la résolution de problèmes. Aujourd'hui, je m'épanouis en collaborant avec des équipes pour construire des produits qui apportent une réelle valeur ajoutée. J'aime me tenir à jour des dernières avancées technologiques pour proposer des solutions toujours plus efficaces.",
