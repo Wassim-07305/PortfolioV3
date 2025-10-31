@@ -72,7 +72,7 @@ export default function HomePage() {
               </div>
             </a>
             
-            <a href="https://discord.gg/p596k9Uj" target="_blank" rel="noopener noreferrer"
+            <a href="https://discord.gg/fjmwCwH2jM" target="_blank" rel="noopener noreferrer"
                className="group relative w-full rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-200 bg-gradient-to-r from-indigo-600/20 to-blue-600/20 border border-white/10 backdrop-blur-sm p-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
