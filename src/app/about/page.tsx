@@ -40,10 +40,10 @@ export default function AboutPage() {
               <Image src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" width={20} height={20} className="w-5 h-5" />
               <span className="text-sm font-medium">@wassim.builds</span>
             </a>
-            <a href="https://www.tiktok.com/@wassim.aiops" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.tiktok.com/@wassim.builds" target="_blank" rel="noopener noreferrer"
                className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/8 backdrop-blur-md hover:bg-white/12 transition-all duration-200">
               <Image src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" width={20} height={20} className="w-5 h-5" />
-              <span className="text-sm font-medium">@wassim.aiops</span>
+              <span className="text-sm font-medium">@wassim.builds</span>
             </a>
           </div>
 
