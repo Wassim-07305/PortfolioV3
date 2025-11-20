@@ -109,6 +109,20 @@ function AppStoreRedirectContent() {
             </div>
           </div>
 
+          {/* Copier le lien */}
+          <div className="pt-4 border-t border-white/10">
+            <p className="text-white/60 text-sm mb-3">Ou copiez ce lien et collez-le dans votre navigateur :</p>
+            <div className="flex items-center gap-2 bg-white/5 rounded-lg p-3 border border-white/10">
+              <code className="flex-1 text-xs text-white/80 break-all text-left">{appStoreUrl}</code>
+              <button
+                onClick={copyLink}
+                className="flex-shrink-0 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-sm font-medium transition-colors"
+              >
+                {copied ? '✓ Copié!' : 'Copier'}
+              </button>
+            </div>
+          </div>
+
           {/* QR Code */}
           <div className="pt-4 border-t border-white/10">
             <p className="text-white/60 text-sm mb-3">Ou scannez ce QR code avec votre appareil photo :</p>
@@ -120,20 +134,6 @@ function AppStoreRedirectContent() {
                   className="w-48 h-48"
                 />
               </div>
-            </div>
-          </div>
-
-          {/* Alternative : Copier le lien */}
-          <div className="pt-4 border-t border-white/10">
-            <p className="text-white/60 text-sm mb-3">Ou copiez ce lien et collez-le dans votre navigateur :</p>
-            <div className="flex items-center gap-2 bg-white/5 rounded-lg p-3 border border-white/10">
-              <code className="flex-1 text-xs text-white/80 break-all text-left">{appStoreUrl}</code>
-              <button
-                onClick={copyLink}
-                className="flex-shrink-0 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-sm font-medium transition-colors"
-              >
-                {copied ? '✓ Copié!' : 'Copier'}
-              </button>
             </div>
           </div>
         </div>
