@@ -59,6 +59,25 @@ export default function HomePage() {
 
           {/* Project Links */}
           <div className="flex flex-col gap-4 w-full max-w-[500px] mt-8">
+            {/* Carte Calendly */}
+            <a href="https://calendly.com/ahmanewassim6/idee-a-app" target="_blank" rel="noopener noreferrer"
+               className="group relative w-full rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-200 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 border border-white/10 backdrop-blur-sm p-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div className="flex flex-col items-start text-left">
+                  <span className="text-xl font-bold">Tu veux créer ton App ou SaaS ?</span>
+                  <span className="text-sm text-white/70 mt-1">Réserve un appel pour discuter de ton projet</span>
+                </div>
+              </div>
+            </a>
+
             <div className="group relative w-full rounded-xl overflow-hidden bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-white/10 backdrop-blur-sm p-6">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
